@@ -102,3 +102,25 @@
 * [data.gov](https://www.data.gov)
 * [DBpedia](https://wiki.dbpedia.org)
 * [figshare](https://figshare.com)
+
+### ローカル環境構築
+
+VS Code上でJupyter Notebookを実行するための環境を構築する手順は以下の通りです。
+
+1. Python拡張機能のインストール
+    - VS Codeの拡張機能マーケットプレイスから「Python」拡張機能をインストールします。
+2. Jupyter拡張機能のインストール
+    - 同様に「Jupyter」拡張機能もインストールします。  
+3. 必要なPythonバージョンのインストール
+    - ```pyenv install 3.11.5```
+    - ```pyenv local 3.11.5```
+4. Python仮想環境の作成
+    - ターミナルを開き、プロジェクトディレクトリで以下のコマンドを実行して仮想環境を作成します。
+    - ```python -m venv .venv```
+5. 仮想環境のアクティブ化
+    - ```source .venv/bin/activate```
+    - ```.venv\Scripts\activate```
+6. 必要なパッケージのインストール
+    - ```pip install -r requirements.txt```
+7. VS CodeでJupyter Notebookを開く
+    - VS Codeで .ipynb ファイルを開きます。上部に「Select Kernel」というオプションが表示されるので、作成した仮想環境を選択します。

@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pandas
+py4macro
+statsmodels
+wooldridge
+scipy
+numba
+jupyter
